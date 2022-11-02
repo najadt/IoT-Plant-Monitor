@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seeedstudio_iot_garden/screens/about/about.dart';
 import 'package:seeedstudio_iot_garden/screens/instructions/instructions.dart';
+import 'package:seeedstudio_iot_garden/screens/settings/settings.dart';
 import 'package:seeedstudio_iot_garden/widgets/ad.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -32,13 +33,13 @@ class AppDrawer extends StatelessWidget {
                 Get.back();
                 Get.to(() => const InstructionsPage());
               }),
-          // ListTile(
-          //     leading: const Icon(Icons.apps),
-          //     title: const Text('Other Apps'),
-          //     onTap: () {
-          //       Get.back();
-          //      // Get.to(() => null);
-          //     }),
+          ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text('Settings'),
+              onTap: () {
+                Get.back();
+                Get.to(() => const SettingsPage());
+              }),
           ListTile(
               leading: const Icon(Icons.info),
               title: const Text('About'),
@@ -46,7 +47,6 @@ class AppDrawer extends StatelessWidget {
                 Get.back();
                 Get.to(() => const AboutPage());
               }),
-
           const Padding(
               padding: EdgeInsets.all(20.0),
               child: AdWidget(
