@@ -75,6 +75,8 @@ flutter:
     - assets/nothing.png
     - assets/websitelogo.png
     - assets/IPM_AndroidIcon.png
+    - assets/paypal_donate_button.png
+    - assets/upi_payments.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:seeedstudio_iot_garden/screens/about/about.dart';
 import 'package:seeedstudio_iot_garden/screens/instructions/instructions.dart';
 import 'package:seeedstudio_iot_garden/screens/settings/settings.dart';
+import 'package:seeedstudio_iot_garden/screens/support_dev/support_dev.dart';
 import 'package:seeedstudio_iot_garden/widgets/ad.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -46,6 +47,13 @@ class AppDrawer extends StatelessWidget {
               onTap: () {
                 Get.back();
                 Get.to(() => const AboutPage());
+              }),
+          ListTile(
+              leading: const Icon(Icons.monetization_on),
+              title: const Text('Support Developer'),
+              onTap: () {
+                Get.back();
+                Get.to(() => const DonationPage());
               }),
           const Padding(
               padding: EdgeInsets.all(20.0),

@@ -126,6 +126,9 @@ class AddPlant extends StatelessWidget {
                       icon: const Icon(Icons.add),
                       label: const Text('Add')),
                   ElevatedButton.icon(
+                      // style: ButtonStyle(
+                      //     backgroundColor:
+                      //         MaterialStateProperty.all(Colors.red)),
                       onPressed: () => Get.back(),
                       icon: const Icon(Icons.cancel),
                       label: const Text('Cancel')),

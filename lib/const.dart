@@ -1,1 +1,1 @@
-Duration refreshInterval = const Duration(seconds: 1);
+late Duration refreshInterval;

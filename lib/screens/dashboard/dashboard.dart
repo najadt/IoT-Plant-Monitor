@@ -8,7 +8,6 @@ import 'package:seeedstudio_iot_garden/controller/dashboard_controller.dart';
 class DashBoard extends StatelessWidget {
   const DashBoard({super.key});
 
-//   final BannerAd myBanner = BannerAd(
   @override
   Widget build(BuildContext context) {
     //final AdWidget adWidget = AdWidget(ad: myBanner);
@@ -64,7 +63,6 @@ class DashBoard extends StatelessWidget {
                         children: [
                           Image.asset(
                             'assets/nothing.png',
-                            //colorBlendMode: BlendMode.softLight,
                             height: 200,
                           ),
                           const SizedBox(
@@ -91,17 +89,6 @@ class DashBoard extends StatelessWidget {
     );
   }
 }
-
-// Path _buildBoatPath1() {
-//     return Path()
-//       ..moveTo(50, 0)
-//       ..lineTo(100, 100)
-//       ..lineTo(200, 100)
-//       ..lineTo(250, 0)
-
-//       //..lineTo(15, 50)
-//       ..close();
-//   }
 
 
 // if (snapshot.hasData) {
