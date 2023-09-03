@@ -17,7 +17,7 @@ class OtherApps extends StatelessWidget {
       body: FutureBuilder(
           future: null,
           builder: (context, snapshot) {
-            return Column();
+            return const Column();
           }),
     );
   }

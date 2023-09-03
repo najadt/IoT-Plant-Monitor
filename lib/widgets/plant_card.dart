@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
+import 'package:liquid_progress_indicator_v2/liquid_progress_indicator.dart';
 import 'package:seeedstudio_iot_garden/models/plant_model.dart';
 import 'package:seeedstudio_iot_garden/controller/dashboard_controller.dart';
 import 'package:seeedstudio_iot_garden/controller/stream_controller.dart';
@@ -57,10 +57,10 @@ class _PlantCardState extends State<PlantCard> {
                     }
                   }),
                   itemBuilder: (context) => [
-                    PopupMenuItem(
+                    const PopupMenuItem(
                       value: 1,
                       child: Row(
-                        children: const [
+                        children: [
                           Icon(Icons.cable),
                           SizedBox(
                             // sized box with width 10
@@ -70,10 +70,10 @@ class _PlantCardState extends State<PlantCard> {
                         ],
                       ),
                     ),
-                    PopupMenuItem(
+                    const PopupMenuItem(
                       value: 2,
                       child: Row(
-                        children: const [
+                        children: [
                           Icon(Icons.delete_forever),
                           SizedBox(
                             width: 10,

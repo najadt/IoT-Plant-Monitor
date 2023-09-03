@@ -35,8 +35,8 @@ class AboutPage extends StatelessWidget {
                     onPressed: () => launchUrl(
                         Uri.parse('https://diyusthad.com'),
                         mode: LaunchMode.externalApplication),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         Text(
                           'Developed By DIY Usthad',
                           textAlign: TextAlign.left,
