@@ -1,16 +1,11 @@
-# seeedstudio_iot_garden
+# Concept
+The concept is to run a WebSocket server in XIAO ESP32C which will read and calibrate the data from a bunch of sensors like a Soil Moisture Sensor, pH Sensor, Temperature Sensor, and Humidity Sensor and send all this information in JSON format to connected clients via the WebSockets whenever the client request for the data.
 
-A new Flutter project.
+In our case, the client is a mobile application built in Flutter that can handle multiple WebSocket connections and display all the received information in the app dashboard in an elegant graphical interface.
 
-## Getting Started
+![](https://diyusthad.com/wp-content/uploads/2022/11/WebSocket-1024x576.gif)
 
-This project is a starting point for a Flutter application.
+Note, in the below example we are only using a Soil Moisture Sensor because currently, I am not having the other sensors.
 
-A few resources to get you started if this is your first Flutter project:
+Project Link: https://diyusthad.com/2022/11/iot-plant-monitor-using-xiao-esp32-flutter-app.html
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
